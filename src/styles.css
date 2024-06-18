@@ -42,12 +42,18 @@ body {
 }
 
 .palindrome {
-  width: 40rem;
+  width: 60rem;
   background: var(--white);
   padding: 5rem 3rem;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(248, 175, 92, 0.9);
   border: 2px solid var(--color-sec);
+}
+
+.input-and-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input {
@@ -76,6 +82,7 @@ button {
 button:hover {
   font-weight: bolder;
   background: rgba(248, 175, 92, 0.9);
+  color: var(--color-light-blue);
   border: 2px solid var(--color-sec);
 }
 

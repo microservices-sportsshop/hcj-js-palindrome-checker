@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.querySelector(".btn");
+    const btnCheck = document.querySelector(".btn");
+    const btnReset = document.querySelector(".reset");
     const result = document.querySelector(".result");
 
     const isPalindrome = (str) => {
@@ -11,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const checkPalindrome = () => {
-        const word = document.querySelector(".input-text").value;
+        const word = document.querySelector(".input-text").value.trim();
 
-        if (word.trim() === "") {
+        if (word === "") {
             result.innerHTML = "Please enter a word.";
             return;
         }
@@ -21,5 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
         result.innerHTML = `${word.toUpperCase()} is ${isPalindrome(word) ? '' : 'NOT '}a palindrome`;
     };
 
-    btn.addEventListener("click", checkPalindrome);
+    const resetForm = () => {
+        document.querySelector(".input-text").value = "";
+        result.innerHTML = "Enter a word to verify whether it is a Palindrome OR not";
+    };
+
+    btnCheck.addEventListener("click", checkPalindrome);
+    btnReset.addEventListener("click", resetForm);
 });
