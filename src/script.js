@@ -1,21 +1,23 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const hexcolor = document.querySelector(".hexcolor");
-//     const generateBtn = document.querySelector(".generate");
-//     const resetBtn = document.querySelector(".reset");
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".btn");
+    const result = document.querySelector(".result");
 
-//     const generateNumber = () => {
-//         const randomColor = `#${Math.random().toString(16).substring(2, 8)}`;
-//         document.body.style.backgroundColor = randomColor;
-//         hexcolor.textContent = randomColor;
-//     };
+    btn.addEventListener("click", palindrome);
 
-//     const resetNumber = () => {
-//         hexcolor.textContent = "#ffffff";
-//         document.body.style.backgroundColor = "#ffffff";
-//     };
+    function palindrome() {
+        const word = document.querySelector(".input-text").value;
+        let len = word.length;
 
-//     generateBtn.addEventListener("click", generateNumber);
-//     resetBtn.addEventListener("click", resetNumber);
+        let start = word.substring(0, Math.floor(len / 2)).toLowerCase();
+        let end = word.substring(len - Math.floor(len / 2)).toLowerCase();
 
-//     generateNumber();
-// });
+        // let flip = end.split("").reverse().join("");
+
+        let flip = [...end].reverse().join("");
+        if (start == flip) {
+            result.innerHTML = `${word.toUpperCase()} is a palindrome`;
+        } else {
+            result.innerHTML = `${word.toUpperCase()} is NOT a palindrome`;
+        }
+    }
+});

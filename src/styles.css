@@ -48,7 +48,7 @@ body {
   padding: 5rem 3rem;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(248, 175, 92, 0.9);
-  border: 1px solid var(--color-sec);
+  border: 2px solid var(--color-sec);
 }
 
 input {
@@ -58,6 +58,7 @@ input {
   border-bottom: 2px solid var(--color-sec);
   padding: 1rem 5px;
   font-size: 1.6rem;
+  color: var(--color-primary);
 }
 
 button {
