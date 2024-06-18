@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.querySelector(".btn");
     const result = document.querySelector(".result");
 
-    btn.addEventListener("click", palindrome);
-
-    function palindrome() {
+    const palindrome = () => {
         const word = document.querySelector(".input-text").value;
         let len = word.length;
 
@@ -19,5 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             result.innerHTML = `${word.toUpperCase()} is NOT a palindrome`;
         }
-    }
+    };
+
+    btn.addEventListener("click", palindrome);
 });
