@@ -18,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const message = `${word.toUpperCase()} is ${isPalindrome(word) ? '' : 'NOT '}a palindrome`;
-        result.innerHTML = message;
-
+        result.innerHTML = `${word.toUpperCase()} is ${isPalindrome(word) ? '' : 'NOT '}a palindrome`;
     };
 
     btn.addEventListener("click", checkPalindrome);
