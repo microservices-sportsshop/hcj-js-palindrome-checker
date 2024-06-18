@@ -58,7 +58,8 @@ input {
   border-bottom: 2px solid var(--color-sec);
   padding: 1rem 5px;
   font-size: 1.6rem;
-  color: var(--color-primary);
+  color: var(--color-sec);
+  font-weight: bolder;
 }
 
 button {
