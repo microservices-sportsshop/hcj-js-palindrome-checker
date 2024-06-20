@@ -57,7 +57,7 @@ body {
 }
 
 input {
-  width: 70%;
+  width: 60%;
   border: none;
   outline: none;
   border-bottom: 2px solid var(--color-sec);
@@ -69,21 +69,21 @@ input {
 
 button {
   width: 25%;
+  margin-left: 10px;  /* Add margin to create space between the buttons */
   padding: 1rem 5px;
   outline: none;
   border-radius: 3px;
   color: var(--white);
-  background: var(--color-sec);
-  box-shadow: 2px 2px 2px 0px rgba(248, 175, 92, 0.9);
+  background: var(--color-primary);
+  box-shadow: 2px 2px 2px 0px rgba(244, 130, 221, 0.9);
   border: 2px solid var(--white);
   cursor: pointer;
 }
 
 button:hover {
   font-weight: bolder;
-  background: rgba(248, 175, 92, 0.9);
-  color: var(--color-light-blue);
-  border: 2px solid var(--color-sec);
+  background: rgba(244, 130, 221, 0.9);
+  border: 2px solid var(--color-primary);
 }
 
 p {
