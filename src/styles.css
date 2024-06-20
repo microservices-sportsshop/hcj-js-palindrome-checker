@@ -69,8 +69,7 @@ body {
 
 .btn {
   width: 25%;
-  margin-left: 10px;
-  /* Add margin to create space between the buttons */
+  margin-left: 10px; /* Add margin to create space between the buttons */
   padding: 1rem 5px;
   outline: none;
   border-radius: 3px;
