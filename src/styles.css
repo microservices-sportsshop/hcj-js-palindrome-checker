@@ -83,7 +83,8 @@ button {
 button:hover {
   font-weight: bolder;
   background: rgba(244, 130, 221, 0.9);
-  border: 2px solid var(--color-primary);
+  box-shadow: 2px 2px 2px 0px var(--color-primary);
+  border: 2px solid var(--white);
 }
 
 p {
